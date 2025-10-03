@@ -230,6 +230,8 @@ curl -X POST "http://localhost:8000/v1/stream" \
   --no-buffer
 ```
 
+Reference `readme_examples.py` for some runnable examples.
+
 ## Important Notes
 
 1. **Complete Text**: Always use `updatedText` - it contains the full response, not just the new part
