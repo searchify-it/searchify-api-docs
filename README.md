@@ -88,7 +88,7 @@ Citations appear as numbered references in the text: `[0]`, `[1]`, `[2]`, etc.
 
 ```javascript
 async function streamSearchifyResponse(apiKey, instanceHash, query) {
-  const response = await fetch('http://localhost:8000/v1/stream', {
+  const response = await fetch('http://BASE_URL', {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${apiKey}`,
@@ -168,7 +168,7 @@ import json
 import re
 
 def stream_searchify_response(api_key, instance_hash, query):
-    url = "http://localhost:8000/v1/stream"
+    url = "http://BASE_URL"
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
@@ -220,7 +220,7 @@ for citation_id in citation_matches:
 ### cURL
 
 ```bash
-curl -X POST "http://localhost:8000/v1/stream" \
+curl -X POST "http://BASE_URL" \
   -H "Authorization: Bearer your_api_key_here" \
   -H "Content-Type: application/json" \
   -d '{
